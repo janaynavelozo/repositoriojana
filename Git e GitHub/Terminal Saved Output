@@ -1,0 +1,156 @@
+Last login: Sat Jul  6 09:37:40 on ttys000
+Janaynas-MacBook:~ janaynavelozo1$ git status
+fatal: not a git repository (or any of the parent directories): .git
+Janaynas-MacBook:~ janaynavelozo1$ ls
+Applications	Documents	Movies		Prezi		Wine Files
+Calibre Library	Downloads	Music		Public		getmacapps_temp
+Desktop		Library		Pictures	Trovi
+Janaynas-MacBook:~ janaynavelozo1$ cd users
+-bash: cd: users: No such file or directory
+Janaynas-MacBook:~ janaynavelozo1$ cd users/janaynavelozo1/Desktop
+-bash: cd: users/janaynavelozo1/Desktop: No such file or directory
+Janaynas-MacBook:~ janaynavelozo1$ cd Users/janaynavelozo1/Desktop
+-bash: cd: Users/janaynavelozo1/Desktop: No such file or directory
+Janaynas-MacBook:~ janaynavelozo1$ pwd
+/Users/janaynavelozo1
+Janaynas-MacBook:~ janaynavelozo1$ cd Desktop
+Janaynas-MacBook:Desktop janaynavelozo1$ cd git-wwc
+Janaynas-MacBook:git-wwc janaynavelozo1$ git status
+On branch feature-script-jana
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Scripts/feature-script-jana.js
+
+Janaynas-MacBook:git-wwc janaynavelozo1$ echo "testando os echos" >> Scripts/feature-script-jana.js
+Janaynas-MacBook:git-wwc janaynavelozo1$ git commit -m "Adicionando Script de Jana"
+[feature-script-jana 0641c06] Adicionando Script de Jana
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Scripts/feature-script-jana.js
+Janaynas-MacBook:git-wwc janaynavelozo1$ git push -u origin feature-script
+error: src refspec feature-script does not match any
+error: failed to push some refs to 'https://github.com/janaynavelozo/git-wwc'
+Janaynas-MacBook:git-wwc janaynavelozo1$ git push -u origin feature-script-jana
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 473 bytes | 473.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feature-script-jana' on GitHub by visiting:
+remote:      https://github.com/janaynavelozo/git-wwc/pull/new/feature-script-jana
+remote: 
+To https://github.com/janaynavelozo/git-wwc
+ * [new branch]      feature-script-jana -> feature-script-jana
+Branch 'feature-script-jana' set up to track remote branch 'feature-script-jana' from 'origin'.
+Janaynas-MacBook:git-wwc janaynavelozo1$ git slash
+git: 'slash' is not a git command. See 'git --help'.
+
+The most similar command is
+	stash
+Janaynas-MacBook:git-wwc janaynavelozo1$ git stash
+Saved working directory and index state WIP on feature-script-jana: 0641c06 Adicionando Script de Jana
+Janaynas-MacBook:git-wwc janaynavelozo1$ git status
+On branch feature-script-jana
+Your branch is up to date with 'origin/feature-script-jana'.
+
+nothing to commit, working tree clean
+Janaynas-MacBook:git-wwc janaynavelozo1$ git log
+commit 0641c0643fb3c8ddd68b651a53fb6f4039a7af7d (HEAD -> feature-script-jana, origin/feature-script-jana)
+Author: Janayna <janaynavelozo@gmail.com>
+Date:   Sat Jul 6 15:13:10 2019 -0300
+
+    Adicionando Script de Jana
+
+commit 39343111750b61c1576f5896a255e112abd172ee (origin/master, origin/HEAD, master)
+Author: Lívia Souza <lmrs@cesar.org.br>
+Date:   Fri Jul 5 20:06:40 2019 -0300
+
+    fix js references
+
+commit 03e7462e777d2925e780fd0ab582c93ea66fed55
+Author: Lívia Souza <lmrs@cesar.org.br>
+Date:   Fri Jul 5 20:04:55 2019 -0300
+
+    updated repo to wwc
+Janaynas-MacBook:git-wwc janaynavelozo1$ git status
+On branch feature-script-jana
+Your branch is up to date with 'origin/feature-script-jana'.
+
+nothing to commit, working tree clean
+Janaynas-MacBook:git-wwc janaynavelozo1$ git push -u origin feature-script
+error: src refspec feature-script does not match any
+error: failed to push some refs to 'https://github.com/janaynavelozo/git-wwc'
+Janaynas-MacBook:git-wwc janaynavelozo1$ git push -u origin feature-script-jana
+Branch 'feature-script-jana' set up to track remote branch 'feature-script-jana' from 'origin'.
+Everything up-to-date
+Janaynas-MacBook:git-wwc janaynavelozo1$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Janaynas-MacBook:git-wwc janaynavelozo1$ git branch
+  feature-script-jana
+* master
+Janaynas-MacBook:git-wwc janaynavelozo1$ git checkout -b feature-part-jana
+Switched to a new branch 'feature-part-jana'
+Janaynas-MacBook:git-wwc janaynavelozo1$ git add participantes.md
+Janaynas-MacBook:git-wwc janaynavelozo1$ git status
+On branch feature-part-jana
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   PARTICIPANTES.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Janaynas-MacBook:git-wwc janaynavelozo1$ git commit -m "Adicionando Part de Jana"
+On branch feature-part-jana
+Changes not staged for commit:
+	modified:   PARTICIPANTES.md
+
+no changes added to commit
+Janaynas-MacBook:git-wwc janaynavelozo1$ status
+-bash: status: command not found
+Janaynas-MacBook:git-wwc janaynavelozo1$ git status
+On branch feature-part-jana
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   PARTICIPANTES.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Janaynas-MacBook:git-wwc janaynavelozo1$ pwd
+/Users/janaynavelozo1/Desktop/git-wwc
+Janaynas-MacBook:git-wwc janaynavelozo1$ git branch
+* feature-part-jana
+  feature-script-jana
+  master
+Janaynas-MacBook:git-wwc janaynavelozo1$ git add PARTICIPANTES.md
+Janaynas-MacBook:git-wwc janaynavelozo1$ git status
+On branch feature-part-jana
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   PARTICIPANTES.md
+
+Janaynas-MacBook:git-wwc janaynavelozo1$ git commit -m "Adicionando Jana como Participante"
+[feature-part-jana 231c00d] Adicionando Jana como Participante
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+Janaynas-MacBook:git-wwc janaynavelozo1$ git push -u origin feature-part-jana
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 400 bytes | 400.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'feature-part-jana' on GitHub by visiting:
+remote:      https://github.com/janaynavelozo/git-wwc/pull/new/feature-part-jan
+remote: 
+To https://github.com/janaynavelozo/git-wwc
+ * [new branch]      feature-part-jana -> feature-part-jana
+Branch 'feature-part-jana' set up to track remote branch 'feature-part-jana' from 'origin'.
+Janaynas-MacBook:git-wwc janaynavelozo1$ 

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+* {font-family: 'Roboto', sans-serif;}
+
+.green-txt {color: #54D1BB;}
+.white-txt {color: white;}
+.blue-txt {color: #2f4076;}
+.yellow-txt {color: #f1c205;}
+.purple-txt {color: #3D1E69;}
+.grey-txt {color: #838282;}
+
+/* MENU */
+.logo {width: 80px;}
+.navbar-items a{color: #54D1BB}
+
+/*CONTACTS*/
+.contact {background: linear-gradient(180deg, #46BEB2 0%, #3A7C95 100%);}
